@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xscopic</title>
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="icon" href="./assets/pictures/logo2.svg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+</head>
+<body>
+    <script src="./src/secrets.js"></script>
+    <script src="./src/main.js"></script>
+
+    <header class="bento-window">
+        <figure id="logo">
+            <div id="logo-sliders">
+                <div class="slider">
+                    <img class="logo" src="./assets/pictures/logo2.svg" alt="logo de Xcopic" style="width: 70px; height: 44px;">
+                    <img class="logo" src="./assets/pictures/logo.svg" alt="logo de Xcopic">
+                </div>
+                <div class="slider">
+                    <img class="logo" src="./assets/pictures/logo2.svg" alt="logo de Xcopic" style="width: 70px; height: 44px;">
+                    <img class="logo" src="./assets/pictures/logo.svg" alt="logo de Xcopic">
+                </div>
+            </div>
+        </figure>
+        <nav id="menu" class="buttons-menu">
+            <div id="options-movies-series" class="buttons-menu">
+                <button id="button-movies" class="button-menu">Películas</button>
+                <button id="button-series" class="button-menu">Series</button>
+            </div>
+            <button id="search" class="button-menu">
+                <img src="./assets/pictures/Icons/iconamoon_search-bold.svg" alt="search icon">
+            </button>
+        </nav>
+        <aside id="user-notifications" class="buttons-menu">
+            <button class="button-menu">
+                <img src="./assets/pictures/Icons/icon_notification.svg" alt="notification icon">
+            </button>
+            <button class="button-menu">
+                <img src="./assets/pictures/Icons/yo_usuario.png" alt="user icon" style="margin-top: 1px;">
+            </button>
+        </aside>
+    </header>
+    <main>
+        <section id="trailers" class="bento-window">
+            <div class="scroll-bar-trailers">
+                <figure class="trailer-card">
+                    <div class="card-fillcolor" >
+                        <img id="movie-1" class="img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jCyJN1vj8jqJJ0vNw4hDH2KlySO.jpg" alt="ver trailer pelicula 1"/>
+                        <h2 class="movie-phrase">Aventuras de beetlejuice</h2>
+                        <button id="ver-trailer-1" class="show-trailer" data-video="Cld40qD7HcY">
+                            <img src="assets/pictures/Icons/play_button.svg" alt="ver trailer button">
+                            <h3 class="show-trailer-text">Ver trailer</h3>
+                        </button>
+                    </div>
+                </figure>
+                <figure class="trailer-card">
+                    <div class="card-fillcolor" >
+                        <img id="movie-2" class="img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3O3klyyYpAZBBE4n7IngzTomRDp.jpg" alt="ver trailer pelicula 2"/>
+                        <h2 class="movie-phrase">Aventuras de beetlejuice</h2>
+                        <button id="ver-trailer-1" class="show-trailer" data-video="i3J6ACKQ7K0">
+                            <img src="assets/pictures/Icons/play_button.svg" alt="ver trailer button">
+                            <h3 class="show-trailer-text">Ver trailer</h3>
+                        </button>
+                    </div>
+                </figure>
+                <figure class="trailer-card">
+                    <div class="card-fillcolor" >
+                        <img id="movie-3" class="img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg" alt="ver trailer pelicula 3"/>
+                        <h2 class="movie-phrase">Aventuras de beetlejuice</h2>
+                        <button id="ver-trailer-1" class="show-trailer" data-video="THjwI5pKNZU">
+                            <img src="assets/pictures/Icons/play_button.svg" alt="ver trailer button">
+                            <h3 class="show-trailer-text">Ver trailer</h3>
+                        </button>
+                    </div>
+                </figure>
+                <figure class="trailer-card">
+                    <div class="card-fillcolor" >
+                        <img id="movie-1" class="img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/w0SFLjdtQtjCB4LvwB7On2V1lgG.jpg" alt="ver trailer pelicula 4"/>
+                        <h2 class="movie-phrase">Aventuras de beetlejuice</h2>
+                        <button id="ver-trailer-1" class="show-trailer" data-video="LE5QzD_qtxs">
+                            <img src="assets/pictures/Icons/play_button.svg" alt="ver trailer button">
+                            <h3 class="show-trailer-text">Ver trailer</h3>
+                        </button>
+                    </div>
+                </figure>
+                <figure class="trailer-card">
+                    <div class="card-fillcolor" >
+                        <img id="movie-2" class="img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xEt2GSz9z5rSVpIHMiGdtf0czyf.jpg" alt="ver trailer pelicula 5"/>
+                        <h2 class="movie-phrase">Aventuras de beetlejuice</h2>
+                        <button id="ver-trailer-1" class="show-trailer" data-video="HGqDzntgnZE">
+                            <img src="assets/pictures/Icons/play_button.svg" alt="ver trailer button">
+                            <h3 class="show-trailer-text">Ver trailer</h3>
+                        </button>
+                    </div>
+                </figure>
+                <figure class="trailer-card">
+                    <div class="card-fillcolor" >
+                        <img id="movie-3" class="img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/gLhHHZUzeseRXShoDyC4VqLgsNv.jpg" alt="ver trailer pelicula 6"/>
+                        <h2 class="movie-phrase">Aventuras de beetlejuice</h2>
+                        <button id="ver-trailer-1" class="show-trailer" data-video="FjQqW_W4Pug">
+                            <img src="assets/pictures/Icons/play_button.svg" alt="ver trailer button">
+                            <h3 class="show-trailer-text">Ver trailer</h3>
+                        </button>
+                    </div>
+                </figure>
+            </div>
+            <dialog id="modal-trailer">
+                <iframe id="video-trailer" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button id="hide-trailer"><img class="close-button-icon" src="assets/pictures/Icons/close_button.svg" alt="close-button"></button>
+            </dialog>
+            <script>
+                const modal = document.getElementById('modal-trailer');
+                const videoFrame = document.getElementById('video-trailer');
+                const closeModalButton = document.getElementById('hide-trailer');
+                
+                // Cerrar modal
+                closeModalButton.addEventListener('click', () => {
+                    modal.close();
+                    videoFrame.src = ''; // Limpiar el video al cerrar el modal
+                });
+                
+                // Manejar la apertura de la modal con diferentes videos
+                document.querySelectorAll('.show-trailer').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const videoId = button.getAttribute('data-video');
+                        videoFrame.src = `https://www.youtube.com/embed/${videoId}`;
+                        modal.showModal();
+                    });
+                });
+            </script>
+        </section>
+        <section id="menu-categories" class="bento-window">
+            <div class="scroll-bar-categories">
+                <div id="buttons-categories" class="buttons-menu">
+                    <button id="trends" class="button-menu">
+                        <img class="buttons-categories-icons" src="assets/pictures/Icons/icon_trends.svg" alt="icon_trends">
+                        <h3 class="buttons-categories-text">Tendencias</h3>
+                    </button>
+                    <button id="action" class="button-menu">
+                        <img class="buttons-categories-icons" src="assets/pictures/Icons/icon_action.svg" alt="icon_action">
+                        <h3 class="buttons-categories-text">Acción</h3>
+                    </button>
+                    <button id="romantic" class="button-menu">
+                        <img class="buttons-categories-icons" src="assets/pictures/Icons/icon_romance.svg" alt="icon_romance">
+                        <h3 class="buttons-categories-text">Romance</h3>
+                    </button>
+                    <button id="animation" class="button-menu">
+                        <img class="buttons-categories-icons" src="assets/pictures/Icons/icon_animation.svg" alt="icon_animation">
+                        <h3 class="buttons-categories-text">Animacion</h3>
+                    </button>
+                    <button id="horror" class="button-menu">
+                        <img class="buttons-categories-icons" src="assets/pictures/Icons/icon_terror.svg" alt="icon_terror">
+                        <h3 class="buttons-categories-text">Horror</h3>
+                    </button>
+                    <button id="comedy" class="button-menu">
+                        <img class="buttons-categories-icons" src="assets/pictures/Icons/icon_comedy.svg" alt="icon_comedy">
+                        <h3 class="buttons-categories-text">Comedia</h3>
+                    </button>
+                </div>
+            </div>
+            <div class="scroll-bar-categories">
+                <div id="buttons-timeline" class="buttons-menu">
+                    <button id="today" class="button-menu">Hoy</button>
+                    <button id="week" class="button-menu">De la Semana</button>
+                    <button id="year" class="button-menu">Del año</button>
+                </div>
+            </div>
+        </section>
+        <section id="movies" class="bento-window">
+            <nav class="scroll-bar-movies">
+                <figure class="movie-card">
+                    <a href="movie.html?id=1"><img class="movie-img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jCyJN1vj8jqJJ0vNw4hDH2KlySO.jpg" alt="image movie 1">
+                    <h3 class="movie-title">Alien 3</h3>
+                    <h4 class="movie-info">11 jun 2024</h4></a>
+                </figure>
+                <figure class="movie-card">
+                    <a href="movie.html?id=2"><img class="movie-img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jCyJN1vj8jqJJ0vNw4hDH2KlySO.jpg" alt="image movie 2">
+                    <h3 class="movie-title">Gru 4: Mi villano favorito</h3>
+                    <h4 class="movie-info">11 jun 2024</h4></a>
+                </figure>
+                <figure class="movie-card">
+                    <a href="movie.html?id=3"><img class="movie-img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jCyJN1vj8jqJJ0vNw4hDH2KlySO.jpg" alt="image movie 1">
+                    <h3 class="movie-title">Alien 3</h3>
+                    <h4 class="movie-info">11 jun 2024</h4></a>
+                </figure>
+                <figure class="movie-card">
+                    <a href="movie.html?id=4"><img class="movie-img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jCyJN1vj8jqJJ0vNw4hDH2KlySO.jpg" alt="image movie 1">
+                    <h3 class="movie-title">Alien 3</h3>
+                    <h4 class="movie-info">11 jun 2024</h4></a>
+                </figure>
+                <figure class="movie-card">
+                    <a href="movie.html?id=3">
+                    <img class="movie-img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jCyJN1vj8jqJJ0vNw4hDH2KlySO.jpg" alt="image movie 1">
+                    <h3 class="movie-title">Alien 3</h3>
+                    <h4 class="movie-info">11 jun 2024</h4></a>
+                </figure>
+                <figure class="movie-card">
+                    <a href="movie.html?id=3">
+                    <img class="movie-img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jCyJN1vj8jqJJ0vNw4hDH2KlySO.jpg" alt="image movie 1">
+                    <h3 class="movie-title">Alien 3</h3>
+                    <h4 class="movie-info">11 jun 2024</h4></a>
+                </figure>
+                <figure class="movie-card">
+                    <a href="movie.html?id=3">
+                    <img class="movie-img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jCyJN1vj8jqJJ0vNw4hDH2KlySO.jpg" alt="image movie 1">
+                    <h3 class="movie-title">Alien 3</h3>
+                    <h4 class="movie-info">11 jun 2024</h4></a>
+                </figure>
+                <figure class="movie-card">
+                    <a href="movie.html?id=3">
+                    <img class="movie-img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jCyJN1vj8jqJJ0vNw4hDH2KlySO.jpg" alt="image movie 1">
+                    <h3 class="movie-title">Alien 3</h3>
+                    <h4 class="movie-info">11 jun 2024</h4></a>
+                </figure>
+                <figure class="movie-card">
+                    <a href="movie.html?id=3">
+                    <img class="movie-img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jCyJN1vj8jqJJ0vNw4hDH2KlySO.jpg" alt="image movie 1">
+                    <h3 class="movie-title">Alien 3</h3>
+                    <h4 class="movie-info">11 jun 2024</h4></a>
+                </figure>
+                <figure class="movie-card">
+                    <a href="movie.html?id=3">
+                    <img class="movie-img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jCyJN1vj8jqJJ0vNw4hDH2KlySO.jpg" alt="image movie 1">
+                    <h3 class="movie-title">Alien 3</h3>
+                    <h4 class="movie-info">11 jun 2024</h4></a>
+                </figure>
+                <figure class="movie-card">
+                    <a href="movie.html?id=3">
+                    <a href="movie.html?id=1"><img class="movie-img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jCyJN1vj8jqJJ0vNw4hDH2KlySO.jpg" alt="image movie 1">
+                    <h3 class="movie-title">Alien 3</h3>
+                    <h4 class="movie-info">11 jun 2024</h4></a>
+                </figure>
+                <figure class="movie-card">
+                    <a href="movie.html?id=1"><img class="movie-img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jCyJN1vj8jqJJ0vNw4hDH2KlySO.jpg" alt="image movie 1">
+                    <h3 class="movie-title">Alien 3</h3>
+                    <h4 class="movie-info">11 jun 2024</h4></a>
+                </figure>
+            </nav>
+        </section>
+    </main>
+</body>
+</html>

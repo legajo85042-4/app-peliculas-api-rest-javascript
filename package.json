@@ -1,0 +1,19 @@
+{
+  "name": "app-peliculas-api-rest-javascript",
+  "version": "1.0.0",
+  "description": "App de películas con consumo de API REST con JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legajo85042-4/app-peliculas-api-rest-javascript.git"
+  },
+  "author": "Isidro Yalet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/legajo85042-4/app-peliculas-api-rest-javascript/issues"
+  },
+  "homepage": "https://github.com/legajo85042-4/app-peliculas-api-rest-javascript#readme"
+}
