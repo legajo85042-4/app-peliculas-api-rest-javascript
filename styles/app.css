@@ -69,6 +69,54 @@ header {
    flex-wrap: wrap;
 }
 
+/* boton de busqueda */
+.search-container {
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+
+.search-bar {
+   position: absolute;
+   width: 0;
+   height: 100%;
+   padding: 8px;
+   font-size: 16px;
+   border: none;
+   background-color: var(--windows-color);
+   border-radius: var(--border-radius-generic);
+   color: var(--white-color);
+   backdrop-filter: blur(50px);
+   outline: none;
+   transition: width 0.3s ease-in-out;
+   opacity: 0;
+   right: 0;
+}
+
+input::placeholder {
+   color: #ccc;
+ }
+
+.search-btn {
+   background: none;
+   border: none;
+   cursor: pointer;
+   padding: 0;
+   outline: none;
+}
+
+.search-icon {
+   width: 24px;
+   height: 24px;
+}
+
+.show {
+   width: 333px;
+   opacity: 1;
+   margin-left: 10px;
+}
+/*  */
+
 .bento-window{
    margin: var(--spacer) 0px;
    padding: var(--top-spacer) var(--spacer);
@@ -143,6 +191,11 @@ figure {
 #button-series{
    width: 133px;
    border: none;
+}
+
+#options-movies-series{
+ display: flex;
+ align-items: center;
 }
 
 .button-menu{
@@ -303,6 +356,7 @@ main{
 }
 
 #menu-categories{
+   
    display: flex;
    flex-direction: column;
    width: 100%;
@@ -538,9 +592,15 @@ a {
       flex: 1 1 100%;
    }
 
+   #trailers{
+      padding: 0 0;
+      height: auto;
+      background-color: #00000000;
+   }
    .button-menu::before{
       box-shadow: none;
    }
+   
    .scroll-bar-categories{
       overflow-x: auto;
       scrollbar-width: none;
@@ -552,7 +612,7 @@ a {
       animation-timeline: scroll(x self);
       
    }
-
+  
    @keyframes spaceshadow {
       0%{
          mask-image: linear-gradient(
@@ -609,7 +669,10 @@ a {
       position: sticky;
       scroll-snap-align: center;
    }
-  
+   #movies{
+      padding: 0 0;
+      background-color: #00000000;
+   }
    .trailer-card{
       flex: 0 0 100%;
       position: sticky;
@@ -638,6 +701,19 @@ a {
       flex: 0 0 50%;
       position: sticky;
       scroll-snap-align: center;
+   }
+
+   .movie-main{
+      grid-template: 1fr max-content repeat(4, 200px) / 1fr 1fr;
+      grid-template-areas: "a a" "b b" "g g" "d e" "c c" "f f";
+   }
+   #movie-details{
+      padding: var(--top-spacer) var(--spacer);
+   }
+   #ver-trailer-movie{
+      position: absolute;
+      left: 60%;
+      top: 6%;
    }
 }
 

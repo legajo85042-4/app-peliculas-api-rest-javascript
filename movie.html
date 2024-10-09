@@ -12,7 +12,7 @@
 </head>
 <body>
      
-    <header class="bento-window">
+    <header class="bento-window" >
         <figure id="logo">
             <div id="logo-sliders">
                 <div class="slider">
@@ -60,6 +60,30 @@
                 <img src="assets/pictures/Icons/play_button.svg" alt="ver trailer button">
                 <h3 class="show-trailer-text">Ver trailer</h3>
             </button>
+            <dialog id="modal-trailer">
+                <iframe id="video-trailer" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button id="hide-trailer"><img class="close-button-icon" src="assets/pictures/Icons/close_button.svg" alt="close-button"></button>
+            </dialog>
+            <script>
+                const modal = document.getElementById('modal-trailer');
+                const videoFrame = document.getElementById('video-trailer');
+                const closeModalButton = document.getElementById('hide-trailer');
+                
+                // Cerrar modal
+                closeModalButton.addEventListener('click', () => {
+                    modal.close();
+                    videoFrame.src = ''; // Limpiar el video al cerrar el modal
+                });
+                
+                // Manejar la apertura de la modal con diferentes videos
+                document.querySelectorAll('.show-trailer').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const videoId = button.getAttribute('data-video');
+                        videoFrame.src = `https://www.youtube.com/embed/${videoId}`;
+                        modal.showModal();
+                    });
+                });
+            </script>
         </div>
         <div id="movie-directors" class="bento-window-movie"></div>
         <div id="movie-puntuation" class="bento-window-movie"></div>
